@@ -56,7 +56,7 @@ class Registration extends Component {
     this.removeInfo = this.removeInfo.bind(this)
   }
  
-  handleChange (){ // 用于监听输入框、复选框、下拉列表控件的变化
+  handleChange (event){ // 用于监听输入框、复选框、下拉列表控件的变化
     if ([event.target.type] === "checkbox") {
       this.setState ({ [event.target.name]: event.target.checked }) //如果事件类型为checkbox，则将其值改为checked
     } else {
